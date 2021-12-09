@@ -1,0 +1,46 @@
+body {
+  @extend %opensans-400;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.content--gray {
+  background-color: $headercolor;
+}
+
+.content--green {
+  padding: 30px 0;
+  transition: padding 0.5s linear;
+  background-color: $headercolor2;
+}
+
+.content--green--active {
+  position: fixed;
+  padding: 15px 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.cotnent--grayline {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: $headercolor;
+  padding: 25px 0;
+}
+
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

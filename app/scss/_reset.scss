@@ -37,8 +37,6 @@ ul {
 }
 
 img {
-  max-width: 100%;
-  height: 100%;
   display: block;
 }
 
@@ -52,6 +50,7 @@ select {
 a {
   text-decoration: transparent;
   color: inherit;
+  font-style: normal;
 }
 
 button {
