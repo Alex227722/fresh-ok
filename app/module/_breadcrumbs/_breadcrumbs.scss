@@ -1,0 +1,29 @@
+.breadcrumbs {
+  margin-bottom: 30px;
+
+  &__bg {
+    background-color: #F6F6F6;
+    padding: 24px 0;
+  }
+
+  &__link-bread {
+    position: relative;
+    margin-right: 8px;
+  }
+
+  &__link-bread:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    margin-left: 3px;
+    background-image: url('../images/icons/chevron.svg');
+    background-repeat: no-repeat;
+  }
+
+  &__link-bread:last-child::after {
+    display: none;
+  }
+
+}

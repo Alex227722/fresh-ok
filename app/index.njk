@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фрешок</title>
+  <link rel="shortcut icon" href="images/icons/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/index.min.css">
+</head>
+
+<body>
+ {% include 'app/module/_header/_header.html' %}
+
+  <main>
+    {% include 'app/module/_slider-main/_slider-main.html' %}
+
+    {% include 'app/module/_services/_services.html' %}
+
+    {% include 'app/module/_product/_product.html' %}
+
+    {% include 'app/module/_offer/_offer.html' %}
+
+    {% include 'app/module/_stock/_stock.html' %}
+
+    {% include 'app/module/_brands/_brands.html' %}
+
+    {% include 'app/module/_news/_news.html' %}
+   
+  </main>
+
+ {% include 'app/module/_footer/_footer.html' %}
+ 
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

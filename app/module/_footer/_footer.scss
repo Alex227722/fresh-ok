@@ -1,0 +1,258 @@
+.footer {
+  color: $defaultwhite;
+  display: grid;
+  grid-template-columns: 1.25fr 1.5fr 0.75fr;
+  grid-template-rows: 1fr 1fr;
+
+  &__form {
+    padding-left: 15px;
+    width: 305px;
+    width: 100%;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  &__col {
+    display: flex;
+    height: 40px;
+  }
+
+  &__input {
+    width: 180px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border: transparent;
+    padding: 12px;
+  }
+
+  &__logo {
+    padding: 35px 0 0 15px;
+    margin-bottom: 35px;
+  }
+
+  &__mail-btn {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    height: 100%;
+    background-color: $headercolor2;
+    color: #fff;
+    padding: 12px 16px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.3s linear;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  &__dizainer-izvrat {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  &__nav {
+    column-count: 3;
+  }
+
+  &__item {
+    margin-bottom: 18px;
+  }
+
+  &__address {
+    padding-right: 15px;
+    grid-column: 3;
+    grid-row: 2;
+    justify-self: end;
+  }
+
+  &__addrres-link {
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  &__bg-line {
+    border: none;
+  }
+
+  &__bg-line2 {
+    grid-row: 3;
+    grid-column: 1/4;
+  }
+
+  &__img:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  &__mail-btn:focus {
+    box-shadow: 0px 0px 0px 4px #E5E5E5;
+  }
+
+  &__mail-btn:hover {
+    background-color: #4D800C;
+  }
+}
+
+.socials {
+  display: flex;
+
+  &__item {
+    margin-right: 10px;
+    transition: 0.3s linear;
+  }
+
+  &__link {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+  }
+
+  &__link--facebook {
+    background-image: url('../images/icons/facebook.svg');
+  }
+
+  &__link--youtube {
+    background-image: url('../images/icons/youtube.svg');
+  }
+
+  &__link--telegram {
+    background-image: url('../images/icons/telegram.svg');
+  }
+
+  &__link--instagram {
+    background-image: url('../images/icons/instagram.svg');
+  }
+
+  &__link:focus {
+    box-shadow: 0px 0px 0px 3px #E0EDCF;
+    border-radius: 3px;
+  }
+
+  &__link:hover path {
+    fill: #CACACA;
+  }
+
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+  .footer__paycard {
+    display: flex;
+    padding-right: 15px;
+  }
+
+  .footer__freshok {
+    padding-left: 15px;
+    color: $defaultwhite;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 992px) {
+ 
+
+  .footer__input {
+    width: 100px;
+  }
+
+  .footer__mail-btn {
+    font-size: 9px;
+  }
+
+  .footer__items {
+    padding-left: 35px
+  }
+
+}
+
+@media (max-width: 768px) {
+
+
+  .footer {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: repeat(4, 0.75fr);
+  }
+
+  .footer__logo {
+    grid-column: 2;
+    justify-self: center;
+    padding: 35px 0 0 0;
+  }
+
+  .footer__address {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+    padding-right: 0px;
+  }
+
+  .footer__dizainer-izvrat {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: center;
+  }
+
+  .footer__nav {
+    padding: 20px 0;
+    width: fit-content;
+    margin: 0 auto;
+    column-count: 2;
+  }
+
+  .footer__form {
+    width: 305px;
+    grid-column: 2;
+    grid-row: 4;
+    justify-self: center;
+    align-self: center;
+    padding-left: 0;
+  }
+
+  .footer__input {
+    width: 180px;
+  }
+
+  .footer__mail-btn {
+    font-size: 12px;
+  }
+
+  .footer__bottom {
+    display: grid;
+    width: 100%;
+    grid-column: 2;
+    grid-row: 5;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .footer__bottom .footer__freshok {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .footer__bottom .footer__paycard {
+    display: flex;
+    grid-row: 1;
+    justify-self: center;
+    margin-bottom: 24px;
+    padding-right: 0;
+  }
+
+  .footer__bg-line {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+  }
+
+}
+
+ 

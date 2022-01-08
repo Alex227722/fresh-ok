@@ -1,0 +1,140 @@
+.slider {
+  height: 600px;
+
+  &__inner-bg {
+    height: 600px;
+    padding: 145px 0;
+    background-repeat: no-repeat;
+  }
+
+  .slick-dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    color: transparent;
+    background-color: #ffffff;
+    margin-right: 12px;
+    border: 1px solid #C1C1C1;
+    z-index: 999999999;
+  }
+
+  .slick-active button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    color: transparent;
+    background-color: #63A60F;
+    margin-right: 12px;
+  }
+
+  &__next,
+  &__prev {
+    cursor: pointer;
+    position: absolute;
+    z-index: 777;
+    top: 50%;
+    margin-top: -30px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    background-color: $defaultwhite;
+  }
+
+  &__prev {
+    left: 60px;
+  }
+
+  &__next {
+    right: 60px;
+  }
+
+  &__item {
+    padding: 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+  }
+
+  &__title {
+    @extend %ruda-900;
+    font-weight: 900;
+    font-size: 60px;
+    color: $colorgray;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  &__title--event {
+    display: block;
+    color: $colorred;
+  }
+
+  &__text {
+    @include line-clamp(1);
+    @extend %opensans-400;
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  &__btn {
+    background-color: $headercolor2;
+    color: $defaultwhite;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: background-color 0.3s linear;
+  }
+
+  &__next:hover,
+  &__prev:hover {
+    background-color: #E0EDCF;
+    fill: yellowgreen;
+  }
+
+  &__btn:hover {
+    background-color: #4D810C;
+  }
+
+  &__btn:active {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media (max-width: 992px) {
+  .slider {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .slick-dots {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    justify-self: center;
+    left: auto;
+    margin-left: 0;
+  }
+
+  .slider,
+  .slider__wrapper {
+    height: 300px;
+  }
+
+  .slider__btn {
+    font-size: 14px;
+  }
+
+  .slider__inner-bg {
+    padding: 55px 0;
+  }
+
+  .slider__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .slider__title {
+    font-size: 20px;
+  }
+}

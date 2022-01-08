@@ -1,0 +1,464 @@
+ <div class="container">
+      <h2 class="catalog__title title">Каталог товаров</h2>
+    </div>
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog__wrapper">
+          <div class="catalog__filters">
+            <svg class="catalog__filters-close" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path
+                d="M10.0551 9.00505L17.7709 1.28919C18.0687 1.00158 18.077 0.527032 17.7894 0.229233C17.5018 -0.0685669 17.0272 -0.0768245 16.7294 0.210785C16.7232 0.216802 16.7171 0.222952 16.711 0.229233L8.99508 7.9451L1.27921 0.229189C0.981408 -0.0584206 0.506861 -0.0501631 0.219251 0.247636C-0.0613304 0.538145 -0.0613304 0.99868 0.219251 1.28919L7.93512 9.00505L0.219251 16.7209C-0.0734093 17.0136 -0.0734093 17.4882 0.219251 17.7809C0.511956 18.0735 0.986503 18.0735 1.27921 17.7809L8.99508 10.065L16.7109 17.7809C17.0087 18.0685 17.4833 18.0602 17.7709 17.7624C18.0514 17.4719 18.0514 17.0114 17.7709 16.7209L10.0551 9.00505Z"
+                fill="black" />
+            </svg>
+            <div class="catalog__inner">
+              <div class="catalog__top">
+                <button class="catalog__btn" type="button">
+                  Категории
+                </button>
+              </div>
+              <div class="catalog__list">
+                <ul class="catalog__menu">
+                  <li class="catalog__item"><a class="catalog__link" href="#">Овощи и фрукты</a></li>
+                  <li class="catalog__item"><a class="catalog__link" href="#">Бакалея</a></li>
+                  <li class="catalog__item"><a class="catalog__link" href="#">Молочные продукты</a></li>
+                  <li class="catalog__item"><a class="catalog__link" href="#">Хлеб</a></li>
+                  <li class="catalog__item"><a class="catalog__link" href="#">Мясо</a></li>
+                  <li class="catalog__item"><a class="catalog__link" href="#">Колбаса</a></li>
+                  <li class="catalog__item"><a class="catalog__link" href="#">Рыба</a></li>
+                  <li class="catalog__item"><a class="catalog__link" href="#">Алкоголь</a></li>
+                  <li class="catalog__item"><a class="catalog__link" href="#">Напитки</a></li>
+                  <li class="catalog__item"><a class="catalog__link" href="#">Торты</a></li>
+                  <li class="catalog__item"><a class="catalog__link" href="#">Мясо</a></li>
+                  <li class="catalog__item"><a class="catalog__link" href="#">Чай, кофе</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog__inner">
+              <div class="catalog__top">
+                <button class="catalog__btn" type="button">
+                  Предложения
+                </button>
+              </div>
+              <div class="catalog__list">
+                <div class="catalog__menu">
+                  <form class="catalog__menu-filters">
+                    <input class="catalog__item" type="checkbox"><span class="catalog__text">Со скидкой</span>
+                    <input class="catalog__item" type="checkbox"><span class="catalog__text">Новинка</span>
+                    <input class="catalog__item" type="checkbox"><span class="catalog__text">Хит</span>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__inner">
+              <div class="catalog__top">
+                <button class="catalog__btn" type="button">
+                  Бренд
+                </button>
+              </div>
+              <div class="catalog__list">
+                <div class="catalog__menu">
+                  <form class="catalog__menu-filters" action="#">
+                    <input class="catalog__item" type="checkbox"><span class="catalog__text">CocaCola</span>
+                    <input class="catalog__item" type="checkbox"><span class="catalog__text">Pepsi</span>
+                    <input class="catalog__item" type="checkbox"><span class="catalog__text">Sprite</span>
+                    <input class="catalog__item" type="checkbox"><span class="catalog__text">Fanta</span>
+                    <input class="catalog__item" type="checkbox"><span class="catalog__text">RedBull</span>
+                    <input class="catalog__item" type="checkbox"><span class="catalog__text">Dr Pepper</span>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__inner">
+              <div class="catalog__top">
+                <button class="catalog__btn" type="button">
+                  Цена
+                </button>
+              </div>
+              <div class="catalog__list">
+                <div class="catalog__menu">
+                  <div class="catalog__form-price">
+                    <label class="catalog__label">от</label>
+                    <span class="catalog__input catalog__input-from"></span>
+                    <label class="catalog__label">₽</label>
+                    <label class="catalog__label">до</label>
+                    <span class="catalog__input catalog__input-to"></span>
+                    <label class="catalog__label">₽</label>
+                  </div>
+                  <div class="catalog__padding">
+                    <form class="catalog-price" action="#">
+                      <input class="catalog-price">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__filters-prod">
+            <div class="catalog__filters-inner">
+              <svg class="catalog__left" width="32" height="36" viewBox="0 0 32 36" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_862_5407)">
+                  <path
+                    d="M13.7804 28.1251H1.13878C0.510161 28.1251 9.68073e-07 28.6291 9.95549e-07 29.2501C1.02303e-06 29.8711 0.510218 30.3751 1.13878 30.3751H13.7803C14.3076 32.9423 16.6046 34.8751 19.3593 34.8751C22.114 34.8751 24.4108 32.9423 24.938 30.3751H30.7469C31.3755 30.3751 31.8857 29.8711 31.8857 29.2501C31.8857 28.6291 31.3755 28.1251 30.7469 28.1251H24.9383C24.411 25.5578 22.114 23.6251 19.3593 23.6251C16.6047 23.6251 14.3076 25.5578 13.7804 28.1251ZM22.7755 29.2501C22.7755 31.1142 21.2463 32.6251 19.3593 32.6251C17.4723 32.6251 15.9429 31.1142 15.9429 29.2501C15.9429 27.3859 17.4723 25.8751 19.3593 25.8751C21.2463 25.8751 22.7755 27.3859 22.7755 29.2501ZM2.39261 16.875H1.13878C0.510161 16.875 4.70298e-07 17.3791 4.97775e-07 18C5.25251e-07 18.621 0.510161 19.125 1.13878 19.125H2.39255C2.9198 21.6923 5.21671 23.6251 7.97145 23.6251C10.7262 23.6251 13.023 21.6923 13.5503 19.125H30.7469C31.3755 19.125 31.8857 18.621 31.8857 18C31.8857 17.379 31.3755 16.875 30.7469 16.875H13.5503C13.0231 14.3078 10.7262 12.375 7.9715 12.375C5.21682 12.375 2.91984 14.3078 2.39261 16.875ZM11.3878 18C11.3878 19.8642 9.8584 21.375 7.97145 21.375C6.08448 21.375 4.5551 19.8642 4.5551 18C4.5551 16.1359 6.08448 14.625 7.97145 14.625C9.8584 14.625 11.3878 16.1359 11.3878 18ZM18.3355 5.62502H1.13878C0.510161 5.62502 -2.74764e-08 6.12906 0 6.75001C2.74741e-08 7.37097 0.510161 7.87501 1.13878 7.87501H18.3355C18.8627 10.4423 21.1597 12.375 23.9143 12.375C26.669 12.375 28.9659 10.4423 29.4931 7.87501H30.7469C31.3755 7.87501 31.8857 7.37097 31.8857 6.75001C31.8857 6.12906 31.3755 5.62502 30.7469 5.62502H29.4931C28.9659 3.05774 26.669 1.125 23.9143 1.125C21.1597 1.125 18.8628 3.05774 18.3355 5.62502ZM27.3306 6.75001C27.3306 8.61414 25.8012 10.125 23.9143 10.125C22.0274 10.125 20.498 8.61414 20.498 6.75001C20.498 4.88587 22.0274 3.37499 23.9143 3.37499C25.8012 3.37499 27.3306 4.88587 27.3306 6.75001Z"
+                    fill="#63A60E" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_862_5407">
+                    <rect width="31.8857" height="36" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <form class="catalog__form">
+                <select class="catalog__filter catalog__select">
+                  <option value="">По названию</option>
+                  <option value="">Фрукты</option>
+                  <option value="">Овощи</option>
+                  <option value="">Виски с колой</option>
+                </select>
+                <select class="catalog__filter catalog__filter-num catalog__select">
+                  <option value="">По 12</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                </select>
+              </form>
+              <button class="catalog__btn-svg catalog__btn-list">
+                <svg class="catalog__svg" width="47" height="47" viewBox="0 0 47 47" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="47" height="47" rx="3" fill="#F6F6F6" />
+                  <path
+                    d="M38.4 34H30.6C29.1641 34 28 34.6268 28 35.4V39.6C28 40.3732 29.1641 41 30.6 41H38.4C39.8359 41 41 40.3732 41 39.6V35.4C41 34.6268 39.8359 34 38.4 34Z"
+                    fill="#C1C1C1" />
+                  <path
+                    d="M16.4 34H8.6C7.16406 34 6 34.6268 6 35.4V39.6C6 40.3732 7.16406 41 8.6 41H16.4C17.8359 41 19 40.3732 19 39.6V35.4C19 34.6268 17.8359 34 16.4 34Z"
+                    fill="#C1C1C1" />
+                  <path
+                    d="M38.4 20H30.6C29.1641 20 28 20.6268 28 21.4V25.6C28 26.3732 29.1641 27 30.6 27H38.4C39.8359 27 41 26.3732 41 25.6V21.4C41 20.6268 39.8359 20 38.4 20Z"
+                    fill="#C1C1C1" />
+                  <path
+                    d="M16.4 20H8.6C7.16406 20 6 20.6268 6 21.4V25.6C6 26.3732 7.16406 27 8.6 27H16.4C17.8359 27 19 26.3732 19 25.6V21.4C19 20.6268 17.8359 20 16.4 20Z"
+                    fill="#C1C1C1" />
+                  <path
+                    d="M38.4 6H30.6C29.1641 6 28 6.6268 28 7.4V11.6C28 12.3732 29.1641 13 30.6 13H38.4C39.8359 13 41 12.3732 41 11.6V7.4C41 6.6268 39.8359 6 38.4 6Z"
+                    fill="#C1C1C1" />
+                  <path
+                    d="M16.4 6H8.6C7.16406 6 6 6.6268 6 7.4V11.6C6 12.3732 7.16406 13 8.6 13H16.4C17.8359 13 19 12.3732 19 11.6V7.4C19 6.6268 17.8359 6 16.4 6Z"
+                    fill="#C1C1C1" />
+                </svg>
+              </button>
+              <button class="catalog__btn-svg catalog__btn-grid active">
+                <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="47" height="47" rx="3" fill="#F6F6F6" />
+                  <path
+                    d="M12.0444 32.4445H7.51111C6.67655 32.4445 6 33.121 6 33.9556V38.4889C6 39.3235 6.67655 40 7.51111 40H12.0444C12.879 40 13.5556 39.3235 13.5556 38.4889V33.9556C13.5556 33.121 12.879 32.4445 12.0444 32.4445Z"
+                    fill="#C1C1C1" />
+                  <path
+                    d="M26.2111 32.4445H21.6778C20.8432 32.4445 20.1667 33.121 20.1667 33.9556V38.4889C20.1667 39.3235 20.8432 40 21.6778 40H26.2111C27.0457 40 27.7222 39.3235 27.7222 38.4889V33.9556C27.7222 33.121 27.0457 32.4445 26.2111 32.4445Z"
+                    fill="#C1C1C1" />
+                  <path
+                    d="M40.3778 32.4445H35.8444C35.0099 32.4445 34.3333 33.121 34.3333 33.9556V38.4889C34.3333 39.3235 35.0099 40 35.8444 40H40.3778C41.2123 40 41.8889 39.3235 41.8889 38.4889V33.9556C41.8889 33.121 41.2123 32.4445 40.3778 32.4445Z"
+                    fill="#C1C1C1" />
+                  <path
+                    d="M12.0444 19.2222H7.51111C6.67655 19.2222 6 19.8987 6 20.7333V25.2666C6 26.1012 6.67655 26.7777 7.51111 26.7777H12.0444C12.879 26.7777 13.5556 26.1012 13.5556 25.2666V20.7333C13.5556 19.8987 12.879 19.2222 12.0444 19.2222Z"
+                    fill="#C1C1C1" />
+                  <path
+                    d="M26.2111 19.2222H21.6778C20.8432 19.2222 20.1667 19.8987 20.1667 20.7333V25.2666C20.1667 26.1012 20.8432 26.7777 21.6778 26.7777H26.2111C27.0457 26.7777 27.7222 26.1012 27.7222 25.2666V20.7333C27.7222 19.8987 27.0457 19.2222 26.2111 19.2222Z"
+                    fill="#C1C1C1" />
+                  <path
+                    d="M40.3778 19.2222H35.8444C35.0099 19.2222 34.3333 19.8987 34.3333 20.7333V25.2666C34.3333 26.1012 35.0099 26.7777 35.8444 26.7777H40.3778C41.2123 26.7777 41.8889 26.1012 41.8889 25.2666V20.7333C41.8889 19.8987 41.2123 19.2222 40.3778 19.2222Z"
+                    fill="#C1C1C1" />
+                  <path
+                    d="M12.0444 6H7.51111C6.67655 6 6 6.67655 6 7.51111V12.0444C6 12.879 6.67655 13.5556 7.51111 13.5556H12.0444C12.879 13.5556 13.5556 12.879 13.5556 12.0444V7.51111C13.5556 6.67655 12.879 6 12.0444 6Z"
+                    fill="#C1C1C1" />
+                  <path
+                    d="M26.2111 6H21.6778C20.8432 6 20.1667 6.67655 20.1667 7.51111V12.0444C20.1667 12.879 20.8432 13.5556 21.6778 13.5556H26.2111C27.0457 13.5556 27.7222 12.879 27.7222 12.0444V7.51111C27.7222 6.67655 27.0457 6 26.2111 6Z"
+                    fill="#C1C1C1" />
+                  <path
+                    d="M40.3778 6H35.8444C35.0099 6 34.3333 6.67655 34.3333 7.51111V12.0444C34.3333 12.879 35.0099 13.5556 35.8444 13.5556H40.3778C41.2123 13.5556 41.8889 12.879 41.8889 12.0444V7.51111C41.8889 6.67655 41.2123 6 40.3778 6Z"
+                    fill="#C1C1C1" />
+                </svg>
+              </button>
+            </div>
+            <div class="catalog__grid-inner">
+
+              <article class="catalog__grid catalog__list product__item">
+                <div class="catalog__notice">
+                  <span class="product__news">НОВИНКА</span>
+                  <span class="product__sale">-50%</span>
+                </div>
+                <button class="catalog__like product__like " type="button"></button>
+                <div class="catalog__column">
+                  <p class="stock__info--ending">ЗАКАНЧИВАЕТСЯ</p>
+                  <button class="stock__rating" type="button">4.5</button>
+                </div>
+                <a class="catalog__link product__link " href="#">
+                  <img class="product__img catalog__img" src="images/shopping/pineapple.jpg" alt="Ананас">
+                </a>
+                <a class="catalog__title-info product__title-info " href="#">
+                  Ананас, 1кг
+                </a>
+                <div class="catalog__col">
+                  <div class="product__price-old">1999 ₽</div>
+                  <div class="product__price">999 ₽</div>
+                </div>
+                <button class="catalog__cart product__cart " type="button"></button>
+              </article>
+
+              <article class="catalog__grid catalog__list product__item">
+                <div class="catalog__notice">
+                  <span class="product__news">НОВИНКА</span>
+                  <span class="product__sale">-50%</span>
+                </div>
+                <button class="catalog__like product__like " type="button"></button>
+                <div class="catalog__column">
+                  <p class="stock__info">В НАЛИЧИИ</p>
+                  <button class="stock__rating" type="button">4.5</button>
+                </div>
+                <a class="catalog__link product__link " href="#">
+                  <img class="catalog__img product__img " src="images/shopping/lemon.jpg" alt="Лимон">
+                </a>
+                <a class="catalog__title-info product__title-info " href="#">Лимон, 1кг</a>
+                <div class="catalog__col">
+                  <div class="product__price">199 ₽</div>
+                </div>
+                <button class="catalog__cart product__cart " type="button"></button>
+              </article>
+
+              <article class="catalog__grid catalog__list product__item">
+                <div class="catalog__notice">
+                  <span class="product__news--hit">ХИТ</span>
+                </div>
+                <button class="catalog__like product__like " type="button"></button>
+                <a class="catalog__link product__link" href="#">
+                  <img class="catalog__img product__img" src="images/shopping/dragonfruit.jpg" alt="Питахайя">
+                </a>
+                <a class="catalog__title-info product__title-info " href="#">Питахайя красная с белой мякотью, 1шт</a>
+                <div class="catalog__column">
+                  <p class="stock__info">В НАЛИЧИИ</p>
+                  <button class="stock__rating" type="button">4.5</button>
+                </div>
+                <div class="catalog__col">
+                  <div class="product__price">1019 ₽</div>
+                </div>
+                <button class="catalog__cart product__cart " type="button"></button>
+              </article>
+
+              <article class="catalog__grid catalog__list product__item">
+                <div class="catalog__notice">
+                </div>
+                <button class="catalog__like product__like" type="button"></button>
+                <a class="catalog__link product__link" href="#">
+                  <img class="catalog__img product__img" src="images/shopping/ketchup.jpg" alt="Кетчуп">
+                </a>
+                <a class="catalog__title-info product__title-info" href="#">Кетчуп томатный детский органический
+                  Bio-Zentrale 500мл, 1
+                  шт</a>
+                <div class="catalog__column">
+                  <p class="stock__info">В НАЛИЧИИ</p>
+                  <button class="stock__rating" type="button">4.5</button>
+                </div>
+                <div class="catalog__col">
+                  <div class="product__price">600 ₽</div>
+                </div>
+                <button class="catalog__cart product__cart" type="button"></button>
+              </article>
+
+              <article class="catalog__grid catalog__list product__item">
+                <div class="catalog__notice">
+                  <span class="product__news--hit">ХИТ</span>
+                </div>
+                <button class="catalog__like product__like" type="button"></button>
+                <a class="catalog__link product__link" href="#">
+                  <img class="catalog__img product__img" src="images/shopping/carrot.jpg" alt="Морковь">
+                </a>
+                <a class="catalog__title-info product__title-info" href="#">Морковь молодая с бабушкиной грядки, 1кг</a>
+                <div class="catalog__column">
+                  <p class="stock__info">В НАЛИЧИИ</p>
+                  <button class="stock__rating" type="button">4.5</button>
+                </div>
+                <div class="catalog__col">
+                  <div class="product__price">49 ₽</div>
+                </div>
+                <button class="catalog__cart product__cart" type="button"></button>
+              </article>
+
+              <article class="catalog__grid catalog__list product__item">
+                <div class="catalog__notice">
+                  <span class="product__sale">-50%</span>
+                </div>
+                <button class="catalog__like product__like" type="button"></button>
+                <a class="catalog__link product__link" href="#">
+                  <img class="catalog__img product__img" src="images/shopping/juice.jpg" alt="Сок">
+                </a>
+                <a class="catalog__title-info product__title-info" href="#">Напиток сокосодержащий Sanpellegrino
+                  Aranciata Orange Красный
+                  апельсин
+                  безалкогольн...
+                </a>
+                <div class="catalog__column">
+                  <p class="stock__info">В НАЛИЧИИ</p>
+                  <button class="stock__rating" type="button">4.5</button>
+                </div>
+                <div class="catalog__col">
+                  <div class="product__price-old">1999 ₽</div>
+                  <div class="product__price-new">199 ₽</div>
+                </div>
+                <button class="catalog__cart product__cart" type="button"></button>
+              </article>
+
+              <article class="catalog__grid catalog__list product__item">
+                <div class="catalog__notice">
+                  <span class="product__news">НОВИНКА</span>
+                </div>
+                <button class="catalog__like product__like" type="button"></button>
+                <a class="catalog__link product__link" href="#">
+                  <img class="catalog__img product__img" src="images/shopping/coffee.jpg" alt="Кофе">
+                </a>
+                <a class="catalog__title-info product__title-info" href="#">Кофе с коноплей органический Caffé Salomoni
+                  250г</a>
+                <div class="catalog__column">
+                  <p class="stock__info">В НАЛИЧИИ</p>
+                  <button class="stock__rating" type="button">4.5</button>
+                </div>
+                <div class="catalog__col">
+                  <div class="product__price">877 ₽</div>
+                </div>
+                <button class="catalog__cart product__cart" type="button"></button>
+              </article>
+
+              <article class="catalog__grid catalog__list product__item">
+                <div class="catalog__notice">
+                  <span class="product__news">НОВИНКА</span>
+                </div>
+                <button class="catalog__like product__like" type="button"></button>
+                <a class="catalog__link product__link" href="#">
+                  <img class="catalog__img product__img" src="images/shopping/paprik.jpg" alt="Перец">
+                </a>
+                <a class="catalog__title-info product__title-info" href="#">Перец оранжевый, 1кг</a>
+                <div class="catalog__column">
+                  <p class="stock__info">В НАЛИЧИИ</p>
+                  <button class="stock__rating" type="button">4.5</button>
+                </div>
+                <div class="catalog__col">
+                  <div class="product__price">349 ₽</div>
+                </div>
+                <button class="catalog__cart product__cart" type="button"></button>
+              </article>
+
+              <article class="catalog__grid catalog__list product__item">
+                <div class="catalog__notice">
+                  <span class="product__news">НОВИНКА</span>
+                  <span class="product__sale">-50%</span>
+                </div>
+                <button class="catalog__like product__like " type="button"></button>
+                <div class="catalog__column">
+                  <p class="stock__info--ending">ЗАКАНЧИВАЕТСЯ</p>
+                  <button class="stock__rating" type="button">4.5</button>
+                </div>
+                <a class="catalog__link product__link " href="#">
+                  <img class="product__img catalog__img" src="images/shopping/pineapple.jpg" alt="Ананас">
+                </a>
+                <a class="catalog__title-info product__title-info " href="#">
+                  Ананас, 1кг
+                </a>
+                <div class="catalog__col">
+                  <div class="product__price-old">1999 ₽</div>
+                  <div class="product__price">999 ₽</div>
+                </div>
+                <button class="catalog__cart product__cart " type="button"></button>
+              </article>
+
+              <article class="catalog__grid catalog__list product__item">
+                <div class="catalog__notice">
+                  <span class="product__news">НОВИНКА</span>
+                  <span class="product__sale">-50%</span>
+                </div>
+                <button class="catalog__like product__like " type="button"></button>
+                <div class="catalog__column">
+                  <p class="stock__info">В НАЛИЧИИ</p>
+                  <button class="stock__rating" type="button">4.5</button>
+                </div>
+                <a class="catalog__link product__link " href="#">
+                  <img class="catalog__img product__img " src="images/shopping/lemon.jpg" alt="Лимон">
+                </a>
+                <a class="catalog__title-info product__title-info " href="#">Лимон, 1кг</a>
+                <div class="catalog__col">
+                  <div class="product__price">199 ₽</div>
+                </div>
+                <button class="catalog__cart product__cart " type="button"></button>
+              </article>
+
+              <article class="catalog__grid catalog__list product__item">
+                <div class="catalog__notice">
+                  <span class="product__news--hit">ХИТ</span>
+                </div>
+                <button class="catalog__like product__like " type="button"></button>
+                <a class="catalog__link product__link" href="#">
+                  <img class="catalog__img product__img" src="images/shopping/dragonfruit.jpg" alt="Питахайя">
+                </a>
+                <a class="catalog__title-info product__title-info " href="#">Питахайя красная с белой мякотью, 1шт</a>
+                <div class="catalog__column">
+                  <p class="stock__info">В НАЛИЧИИ</p>
+                  <button class="stock__rating" type="button">4.5</button>
+                </div>
+                <div class="catalog__col">
+                  <div class="product__price">1019 ₽</div>
+                </div>
+                <button class="catalog__cart product__cart " type="button"></button>
+              </article>
+
+              <article class="catalog__grid catalog__list product__item">
+                <div class="catalog__notice">
+                </div>
+                <button class="catalog__like product__like" type="button"></button>
+                <a class="catalog__link product__link" href="#">
+                  <img class="catalog__img product__img" src="images/shopping/ketchup.jpg" alt="Кетчуп">
+                </a>
+                <a class="catalog__title-info product__title-info" href="#">Кетчуп томатный детский органический
+                  Bio-Zentrale 500мл, 1
+                  шт</a>
+                <div class="catalog__column">
+                  <p class="stock__info">В НАЛИЧИИ</p>
+                  <button class="stock__rating" type="button">4.5</button>
+                </div>
+                <div class="catalog__col">
+                  <div class="product__price">600 ₽</div>
+                </div>
+                <button class="catalog__cart product__cart" type="button"></button>
+              </article>
+            </div>
+            <div class="catalog__pag">
+              <button class="catalog__show-btn stock__show-btn">Показать еще</button>
+              <div class="pagination">
+                <ul class="pagination__list">
+                  <li class="pagination__item pagination__prev pagination__arrow">
+                    <a class="pagination__link" href="#">
+                      <svg width="11" height="18" viewBox="0 0 11 18" fill="none">
+                        <path
+                          d="M0.216369 9.57138L9.22384 17.7799C9.51942 18.074 9.99879 18.074 10.2944 17.7799C10.5899 17.4859 10.5899 17.0087 10.2944 16.7147L1.83001 9.00047L10.2936 1.28631C10.5892 0.992226 10.5892 0.515087 10.2936 0.221029C9.99804 -0.0730267 9.51867 -0.0730267 9.22312 0.221029L0.21562 8.42958C0.0580805 8.58635 -0.00946155 8.79418 0.00106032 8.99972C-0.00873489 9.20603 0.0587852 9.41384 0.216369 9.57138Z"
+                          fill="#505050" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="pagination__item"><a class="pagination__link" href="#">1</a></li>
+                  <li class="pagination__item pagination__item-del"><a class="pagination__link" href="#">2</a></li>
+                  <li class="pagination__item"><a class="pagination__link">...</a></li>
+                  <li class="pagination__item pagination__item-del"><a class="pagination__link" href="#">9</a></li>
+                  <li class="pagination__item"><a class="pagination__link" href="#">10</a></li>
+                  <li class="pagination__item pagination__next pagination__arrow">
+                    <a class="pagination__link" href="#">
+                      <svg width="11" height="18" viewBox="0 0 11 18" fill="none">
+                        <path
+                          d="M10.7836 8.42911L1.77616 0.220559C1.48058 -0.0735196 1.00121 -0.0735196 0.705632 0.220559C0.410053 0.514615 0.410053 0.991755 0.705632 1.28583L9.16999 9.00002L0.706379 16.7142C0.4108 17.0083 0.4108 17.4854 0.706379 17.7795C1.00196 18.0735 1.48132 18.0735 1.77688 17.7795L10.7844 9.57091C10.9419 9.41414 11.0095 9.20631 10.9989 9.00077C11.0087 8.79446 10.9412 8.58665 10.7836 8.42911Z"
+                          fill="#505050" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

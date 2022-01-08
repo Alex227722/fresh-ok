@@ -1,0 +1,115 @@
+.news {
+  margin-bottom: 70px;
+
+  &__all {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  &__all {
+    align-items: center;
+  }
+
+  &__link-all {
+    color: $headercolor2;
+    @extend %opensans-600;
+    font-weight: 600;
+    box-shadow: 0px 2px 0px $headercolor2;
+  }
+
+  &__items {
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    position: relative;
+  }
+
+  &__sticker {
+    position: absolute;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    left: 20px;
+    width: 65px;
+    height: 75px;
+    background-color: $defaultwhite;
+    text-align: center;
+    padding-top: 18px;
+  }
+
+  &__month {
+    display: block;
+    @extend %opensans-700;
+    font-weight: 700;
+    font-size: 10px;
+  }
+
+  &__num {
+    @extend %ruda-600;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  &__img {
+    border-radius: 6px;
+  }
+
+  &__link {
+    @include line-clamp(3);
+    @extend %opensans-600;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px 18px 4px 18px;
+    transition: 0.3s linear;
+  }
+
+  &__link-all:focus {
+    box-shadow: 0px 0px 0px 3px #E0EDCF;
+    border-radius: 3px;
+  }
+
+  &__link-all:hover {
+    box-shadow: 0px 3px 0px $headercolor2;
+  }
+
+  &__link:hover {
+    color: $headercolor2;
+  }
+}
+
+@media (max-width: 1200px) {
+  .news__img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .news__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  .news__title {
+    font-size: 24px;
+  }
+
+  .news__all {
+    display: block;
+  }
+
+  .news__link-all {
+    display: inline-block;
+    margin-bottom: 24px;
+  }
+
+}

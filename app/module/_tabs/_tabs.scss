@@ -1,0 +1,202 @@
+.tabs {
+  border-top: 1px solid #C1C1C1;
+  padding-top: 2px;
+  margin-bottom: 70px;
+
+  &__list {
+    font-size: 16px;
+    color: $colorgray;
+    line-height: 1.6;
+  }
+
+  &__list:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &__characteristic {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  &__characteristics-bold {
+    color: $colorgray;
+    font-weight: 700;
+  }
+
+  &__nav {
+    max-width: 690px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    display: inline-block;
+    @extend %ruda-600;
+    font-size: 18px;
+    padding-top: 15px;
+    text-transform: uppercase;
+    transition: 0.2s linear;
+  }
+
+  &__link--active {
+    color: $headercolor2;
+    box-shadow: 0px -3px 0px 0px $headercolor2;
+  }
+
+  &__item {
+    display: none;
+  }
+
+  &__item.tabs__item--active {
+    display: block;
+  }
+
+  &__content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @extend %ruda-600;
+    font-size: 18px;
+    margin-bottom: 70px;
+    color: #121212;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__info {
+    margin: 0 auto;
+    margin-left: 0;
+  }
+
+  &__name {
+    margin-bottom: 5px;
+  }
+
+  &__img {
+    margin-right: 25px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  &__name {
+    font-weight: 700;
+  }
+
+  &__text {
+    border-bottom: 1px solid #C1C1C1;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    line-height: 1.4;
+    font-size: 16px;
+    color: $colorgray;
+  }
+
+  &__rank {
+    display: flex;
+    margin-bottom: 12px;
+  }
+
+  &__rank-text {
+    margin-right: 18px;
+    font-size: 16px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-bottom: 25px;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+
+  &__right {
+    margin-right: 40px;
+  }
+
+  &__col {
+    justify-self: end;
+  }
+
+  &__textarea {
+    max-width: 400px;
+    width: 100%;
+    height: 165px;
+    border-radius: 3px;
+    padding: 18px;
+    resize: none;
+    border: 1px solid #C1C1C1;
+  }
+
+  &__input {
+    width: 260px;
+    height: 54px;
+    padding: 18px;
+    border-radius: 3px;
+    border: 1px solid #C1C1C1;
+  }
+
+  &__input-left:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &__textarea::placeholder,
+  &__input::placeholder {
+    font-size: 14px;
+    color: #C1C1C1;
+  }
+
+  &__save-info {
+    color: $colorgray;
+    margin-bottom: 24px;
+  }
+
+  &__checkbox {
+    margin-right: 12px;
+  }
+
+  &__column {
+    display: flex;
+  }
+
+  &__button {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .tabs__link {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .tabs__form {
+    display: block;
+  }
+
+  .tabs__right {
+    margin-right: 0;
+  }
+
+  .tabs__textarea,
+  .tabs__input {
+    max-width: inherit;
+    width: 100%;
+  }
+}

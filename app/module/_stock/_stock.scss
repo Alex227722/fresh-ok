@@ -1,0 +1,208 @@
+.stock {
+  background-color: #F5F5F5;
+  padding: 70px 0;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 0.75fr 1fr;
+    position: relative;
+    padding: 11px;
+    height: 124px;
+    border: 1px solid #C1C1C1;
+    border-radius: 6px;
+    background-color: $defaultwhite;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    color: #505050;
+    font-weight: 700;
+  }
+
+  &__filter:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  &__btn.mixitup-control-active {
+    box-shadow: 0px 5px 2px 0px #E5E5E5;
+  }
+
+  &__col {
+    position: relative;
+    padding-top: 10px;
+  }
+
+  &__news--hit,
+  &__news {
+    @extend %opensans-700;
+    font-weight: 700;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    color: $defaultwhite;
+    background-color: $headercolor2;
+    padding: 3px 6px;
+    border-radius: 6px;
+    text-transform: uppercase;
+  }
+
+  &__news--hit {
+    background-color: #FF7A00;
+  }
+
+  &__title-info {
+    @include line-clamp(3);
+    @extend %opensans-600;
+    font-weight: 600;
+    font-size: 14px;
+    max-width: 160px;
+    height: 53px;
+    margin-bottom: 7px;
+  }
+
+  &__info--end,
+  &__info--ending,
+  &__info {
+    color: $headercolor2;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  &__info--ending {
+    color: $colorred;
+  }
+
+  &__info--end {
+    color: #C1C1C1;
+  }
+
+  &__price {
+    display: grid;
+    grid-template-columns: 70px 1fr 1fr;
+  }
+
+  &__price-new {
+    font-size: 20px;
+    @extend %opensans-600;
+    font-weight: 600;
+    color: $colorgray;
+  }
+
+  &__price-old {
+    font-size: 12px;
+    color: #C1C1C1;
+    padding-top: 7px;
+
+  }
+
+  &__price-old::before {
+    content: "";
+    border-bottom: 1px solid #c1c1c1;
+    position: absolute;
+    bottom: 18px;
+    width: 35px;
+    height: 2px;
+    transform: matrix(0.99, -0.17, -0.13, -0.99, 0, 0);
+  }
+
+  &__rating {
+    @extend %opensans-700;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  &__rating::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/stock/star.svg');
+    background-repeat: no-repeat;
+  }
+
+  &__show-btn {
+    display: block;
+    margin: 0 auto;
+    color: $defaultwhite;
+    background-color: $headercolor2;
+    border: 1px solid #63a60f;
+    padding: 12px 24px;
+    border-radius: 6px;
+  }
+
+  &__show-btn:hover {
+    background-color: #4D810C;
+  }
+
+  &__show-btn:active {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &__btn:hover {
+    color: $headercolor2;
+  }
+
+  &__btn:focus {
+    box-shadow: 0px 0px 0px 4px #E5E5E5;
+    border-radius: 3px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .stock__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .stock__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .stock__items {
+    grid-gap: 7px;
+  }
+
+  .stock__item {
+    grid-template-columns: 0.5fr 1fr;
+  }
+
+}
+
+@media (max-width: 575px) {
+
+  .stock__title {
+    font-size: 24px;
+  }
+
+  .stock {
+    padding: 50px 0;
+  }
+
+  .stock__items {
+    grid-template-columns: 1fr;
+  }
+}
